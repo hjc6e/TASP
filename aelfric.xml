@@ -1,0 +1,1997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="en">
+
+		<fileDesc>
+			<titleStmt>
+				<title>Aelfric's <i>Lives of Saints</i>: A Digital Edition</title>
+				<title>The Aelfric Scriptorium Project</title>
+				<principal>Dr. Theodore H. Leinbaugh</principal>
+				<principal>Jake Beerli</principal>
+				<principal>Hunter Corb</principal>
+				<sponsor>Transatlantic Forum for Education and Diplomacy</sponsor>
+				<funder>Transatlantic Forum for Education and Diplomacy</funder>
+				<funder>Joan Gillings</funder>
+				<respStmt>
+					<resp>Project Director:</resp>
+					<name>Dr. Theodore H. Leinbaugh</name>
+					<resp>Project Manager: </resp>
+					<name>Hunter Corb</name>
+					<name>Jacob Beerli</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding in TEI-conformant markup: </resp>
+					<name>Jacob Beerli</name>
+					<name>Hunter Corb</name>
+				</respStmt>
+				<respStmt>
+					<resp>General overview and critical apparatus: </resp>
+					<name>Dr. Theodore H. Leinbaugh</name>
+				</respStmt>
+				<respStmt>
+					<resp>Manuscription description and transcription: </resp>
+					<name>Theodore H. Leinbaugh</name>
+				</respStmt>
+				<respStmt>
+					<resp>Old English Glossary compiled by: </resp>
+					<name>Theodore H. Leinbaugh</name>
+					<name>Hunter Corb</name>
+					<name>Jacob Beerli</name>
+					<name>Robert Laffoon</name>
+				</respStmt>
+			</titleStmt>
+
+			<editionStmt>
+				<edition>Previous editions</edition>
+				<!-- include all previous editions of Aelfric's Live of Saints here -->
+			</editionStmt>
+
+			<extent>?? [megabytes]</extent>
+
+			<publicationStmt>
+				<authority>The Aelfric Scriptorium Project (TASP)</authority>
+				<publisher>Transatlantic Forum for Education and Diplomacy</publisher>
+				<date>2021</date>
+				<availability status="restricted">
+					<license target="http://creativecommons.org/licenses/by-sa/3.0/">Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported license
+					</license>
+					<p>Contact The Aelfric Project team members for more information.</p>
+				</availability>
+			</publicationStmt>
+
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<settlement ref="">London</settlement>
+						<repository ref="">British Library</repository>
+						<idno type="BL">Cotton MS Julius E VII</idno>
+					</msIdentifier>
+					<head>
+						<p>This manuscript - Cotton MS Julius E.vii - dates to the first third of the 11th century and therefore contains
+						one of the earliest known copies of Ælfric's <i>Lives of Saints</i>, along with two other texts associated with
+						him as well asand four anonymous saints' lives (Euphrosyne, Eustace, Mary of Egypt and the Seven Sleepers).
+						It was probably made in the Benedictine Abbey of Bury St Edmunds or at Canterbury. It contains glosses and
+						corrections which appear to have been written in the early 11th century.</p>
+					</head>
+					<msContents>
+						<msItem>
+							<author ref="">Aelfric of Eynsham</author>
+							<title rend="italic" ref="">Lives of Saints</title>
+							<title rend="italic" ref="">Interrogationes Sigewulfi in Genesin</title>
+							<title rend="italic" ref="">De falsis diis</title>
+							<date notBefore="1000" notAfter="1040">1st third of 11th century</date>
+						</msItem>
+						<summary>
+							<!-- This summary is taken from the British Library catalogue entry -->
+							<p>This manuscript contains one of the earliest known copies of Ælfric's <i>Lives of Saints</i>,
+								along with two other texts associated with Ælfric and four possibly anonymous saints' lives
+								(Euphrosyne, Eustace, Mary of Egypt, and the Seven Sleepers). All of these texts were apparently
+								intended as a single volume. The table of contents (f. 4v) includes a reference to another text,
+								<title rend="italic" ref="">De duodicem abusivis</title>, was intended to be included after <i>De falsis diis</i>,
+								but it is not now present. Many of the glosses and corrections appear to have been written in the early 11th century.</p>
+							<p>Contents include:</p>
+							<list>
+								<item>ff. 3r-230r: Ælfric, <i>Lives of Saints</i></item>
+								<item>ff. 230r-238r: Ælfric, <i>Interrogationes Sigewulfi in Genesin</i></item>
+								<item>ff. 238r-240v: <i>De falsis diis</i> (imperfect)</item>
+							</list>
+						</summary>
+						<textLang mainLang="oe" otherLangs="la">
+							Predominantly in Old English with a few isolated Latin words and phrases.
+						</textLang>
+					</msContents>
+
+					<physDesc>
+						<material>Parchment and ink.</material>
+						<objectDesc form="codex">
+							<supportDesc material="parch">
+								<support>
+									<binding>
+										<p>Binding done in-house (British Museum or British Library). Rebound in 1914.
+										</p>
+									</binding>
+								</support>
+								<extent>
+									<p>One parchment codex, measuring approximately 290 x 250 mm.
+										Fos. i + 241 (where ff. i and 1 are early modern endleaves and f. 2 is a Cottonian frontispiece).
+									</p>
+								</extent>
+							</supportDesc>
+							<layoutDesc>
+								<layout>
+									Text is written in a single column per parchment leaf.
+								</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc hands="2">
+							<!-- should double check number of hands thorughout MSS and must include editorial hands as well -->
+							<handNote>
+								<p>The manuscript is written in <term>English vernacular miniscule</term> and
+								<term>English Caroline miniscule.</term>
+								</p>
+							</handNote>
+						</handDesc>
+						<decoDesc>
+							<p>
+								Ornate red initials throughout. Some rubrication is now grey.
+							</p>
+						</decoDesc>
+					</physDesc>
+
+					<history>
+						<!-- all historic and provenance information is taken from the British Library catalogue entry for Lives of Saints -->
+						<origin>
+							<p><name type="place" ref="">Southern England</name> (? the Benedictine abbey of <name type="place" ref="">Bury St Edmunds</name>,
+							or <name type="place" ref="">Canterbury</name>): probably written by one scribe, 1st half of the 11th century
+							(see Ker, <i>Catalogue</i> (1957), p. 210; Stokes, <i>English Vernacular Miniscule</i> (2014), p. 143).</p>
+						</origin>
+						<provenance>
+							<p>The Benedictine abbey of <name type="place" ref="">Bury St Edmunds</name>, <date notBefore="1201" notAfter="1300">
+							13th century</date>:inscribed 'Liber sancti Ædmundi regis [et] martyris'(f. 3r).</p>
+							<p><date notBefore="1501" notAfter="1600">16th-century</date>: interlinear glosses in English added
+							(ff. 153-55, 203, 230).</p>
+							<p><name type="person" ref="">Sir Robert Bruce Cotton</name> (b. 1571, d. 1631), 1st baronet,
+							antiquary and politician: the volume was in Cotton's possession by 1621 and is recorded in the catalogue of the
+							Cottonian collection, Harley MS 6018, no. 179. This item was perhaps once bound with Cotton MS Tiberius B II, ff. 2–85.</p>
+							<p>Cotton’s collection was augmented by his son, <name type="person" ref="">Sir Thomas Cotton</name>, 2nd baronet
+							(b. 1594, d. 1662), and his grandson, <name type="person" ref="">Sir John Cotton</name> (his name is inscribed
+							on f. 3r). <name ref="">Sir John Cotton</name>, 3rd baronet (b. 1621, d. 1702) bequeathed the entire Cotton collection of books and
+							manuscripts to trustees ‘for Publick Use and Advantage’, 12 and 13 William III, c. 7. Formed one of the foundation collections of the
+							<name type="place" ref="">British Museum</name> in 1753.</p>
+						</provenance>
+					</history>
+
+					<additional>
+						<listBibl>
+							<bibl>
+							</bibl>
+						</listBibl>
+					</additional>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<projectDesc>
+				<p>No edition of Aelfric’s <i>Lives of Saints</i> (LS) has yet been published electronically beyond the digitized photographs
+					found on the British Library website. The Aelfric Scriptorium Project (TASP) is working to provide facing transcriptions, translations,
+					running commentaries, glossaries, and other ancillary research materials so that these texts can be better understood
+					and properly placed within their literary, historical, theological, and cultural contexts.</p>
+			</projectDesc>
+			<editorialDecl>
+				<normalization>
+					<p>In an effort to preserve all spelling variants in a world without standardized spelling, we have rendered all words
+						as they appear in the MS.</p>
+					</normalization>
+			</editorialDecl>
+			<!-- should we include a <refsDecl> to show how we are creating our reference? This could be named entities, ms line/word
+			references, bibliographic references, etc. -->
+		</encodingDesc>
+
+		<revisionDesc>
+			<list>
+				<item>
+					<date when=""></date>
+				</item>
+			</list>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb n="5v" facs="data/images/fol_5v.png" />
+			<div type="sermon">
+				<!-- NOTE: (ad) VIII Kalendas = 25 December on the Julian calendar, which in Aelfric's time would have corresponded to Dec 30/31 on the Gregorian calendar but today corresponds to Jan 7. -->
+				<head style="text-align: center; font-variant: smallcaps">
+					<foreign xml:lang="la">
+					<num val="8">
+						<choice>
+							<orig>.UIII.</orig>
+							<reg>.VIII.</reg>
+						</choice>
+					</num>
+					<choice>
+						<abbr>KL</abbr>
+						<expan>KALENDAS</expan>
+					</choice>
+					<choice>
+						<abbr>IAN<macron/></abbr>
+						<expan>IANUARII</expan>
+					</choice>
+					. NATIVITAS
+					<choice>
+						<abbr>DN<macron/>I</abbr>
+						<expan>DOMINI</expan>
+					</choice>
+					<choice>
+						<abbr>NR<macron/>I</abbr>
+						<expan>NOSTRI</expan>
+					</choice>
+					<choice>
+						<abbr>IHU<macron/></abbr>
+						<expan>IESU</expan>
+					</choice>
+					<choice>
+						<abbr lang="GK">XP<macron/>I</abbr>
+						<expan>CHRISTI</expan>
+					</choice>
+				</foreign>
+				</head>
+			</div>
+			<ab>
+				<lb n="1" />
+					<hi style="font-variant: smallcaps"><w><hi rend="decorInit 3lines">M</hi>
+					EN</w> <w>ÐA</w> <w>LEOFESTAN</w> <w>HWILON</w> <w>ÆR</w> <w>WE</w> <w>SÆDON</w> <w>EOW</w> <w>HY</w> <w>URE</w></hi>
+				<lb n="2" /><w>hælend</w> <w>crist</w> <w>on</w> <w>þisum</w> <w>dæge</w> <w>on</w> <w>soðre</w> <w>menniscnẏsse</w> <w>acen
+				<lb n="3" />ned</w> <w>wæs</w> <w>of</w> <w>þæm</w> <w>halgan</w> <w>mædene</w> <w>marian</w> · <w>Nu</w> <w>wẏlle</w> <w>we</w>
+				<lb n="4" /><w>swaþeah</w> <w>for</w> <w>ðẏses</w> <w>dæges</w> <w>mærðe</w> <w>eower</w> <w>mod</w> <w>mid</w> <w>þære</w> <w>gast
+				<lb n="5" />lican</w> <w>lare</w> <w>onbrẏrdan</w> <w>eow</w> <w>to</w> <w>blisse</w> <w>þurh</w> <w>god</w> · <w>Sume</w> <w>gedwol</w>
+				<lb n="6" /><w>menn</w> <w>wæron</w> <w>þuruh</w> <w>deoful</w> <w>beswicane</w>
+					<w>swa</w> 	<w><choice>
+							<abbr>ꝥ</abbr>
+							<expan>þæt</expan>
+						</choice></w> <w>hi</w> <w>cwædon</w> <w>þæt</w>
+				<lb n="7" /><w>crist</w> <w>godes</w> <w>sunu</w> <w>nære</w> <w>æfre</w> <w>mid</w> <w>þam</w> <w>halgan</w> <w>fæder</w> <w>wu
+				<lb n="8" />niende</w> · <w>ac</w> <w>wære</w> <w>sum</w> <w>tima</w> · <w>ær</w> <w>þan</w> <w>þe</w> <w>he</w> <w>acenned</w> <w>wære</w> · <w>ac</w>
+				<lb n="9" />
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>halige</w> <w>godspell</w> <w>hæfð</w> <w>oferswiðod</w> <w>swẏlcera</w> <w>gedwolena</w>
+				<lb n="10" /><w>andgit</w> <w>foroft</w> · <w>Þa</w> <w>iudeiscan</w> <w>axodon</w> <w>crist</w> <w>hwæt</w> <w>he</w> <w>wære</w> ·
+				<lb n="11" /><w>Ða</w> <w>andwẏrde</w> <w>he</w> <w>him</w> <w>þus</w> ·
+					<cit>
+						<foreign xml:lang="la" source="John 8:25"><w>Ego</w> <w>sum</w>
+							<w><choice>
+								<abbr>principiū</abbr>
+								<expan>principium</expan>
+							</choice></w>
+							· <w>qui</w>
+							<w><choice>
+								<abbr>&amp;</abbr>
+								<expan>et</expan>
+							</choice></w>
+							<w>lo
+							<lb n="12" />quor</w> <w>uobis</w> ·
+						</foreign>
+						<w>Ic</w> <w>eom</w> <w>anginn</w> · <w>þe</w> <w>eow</w> <w>to</w> <w>spræce</w> ·
+					</cit>
+					<w>Nu</w> <w>ge</w> <w>habbað</w>
+				<lb n="13" /><w>gehered</w> <w>hu</w> <w>se</w> <w>hælend</w> <w>be</w> <w>him</w> <w>sẏlfum</w> <w>spræc</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>is</w> <w>ordfru
+				<lb n="14" />ma</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>angin</w> <w>ealra</w> <w>þinga</w> · <w>mid</w> <w>his</w> <w>heofonlican</w> <w>fæder</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mid</w>
+				<lb n="15" /><w>þam</w> <w>halgan</w> <w>gaste</w> · <w>Se</w> <w>fæder</w> <w>is</w> <w>angin</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>sunu</w> <w>is</w> <w>angin</w> ·
+				<lb n="16" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>halga</w> <w>gast</w> <w>is</w> <w>angin</w> · <w>ac</w> <w>hi</w> <w>ne</w> <w>sẏnd</w> <w>na</w> <w>þreo</w> <w>anginnu</w> · <w>ac</w>
+				<lb n="17" /><w>hi</w> <w>ealle</w> <w>þrẏ</w> <w>sẏnden</w> <w>an</w> <w>angin</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>an</w> <w>ælmihtig</w> <w>god</w> <w>æfre</w> <w>un</w>
+				<lb n="18" /><w>begunnen</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ungeændod</w> · <w>ac</w> <w>se</w> <w>man</w> <w>wæt</w> <w>þe</w> <w>wẏle</w> <w>habban</w> <w>ænig</w>
+				<lb n="19" /><w>þincg</w> <w>ær</w> <w>anginne</w> · <w>forþan</w> <w>ðe</w> <w>seo</w> <w>halige</w> <w>þrẏnnes</w> · <w>is</w> <w>an
+				<lb n="20" />ginn</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					 <w>an</w> <w>scẏppend</w> <w>ealra</w> <w>gesceafta</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>nan</w> <w>þing</w> <w>næs</w> <w>ne</w>
+				<lb n="21" /><w>nẏs</w> <w>wuniende</w> · <w>þe</w> <w>se</w> <w>an</w> <w>wẏrhta</w> <w>ne</w> <w>gesceope</w>; <w>Gif</w> <w>hwẏlc</w>
+				<lb n="22" /><w>gedwola</w> · <w>oððe</w> <w>awoffod</w> <w>man</w> · <w>wẏle</w> <w>furðor</w> <w>smeagen</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þæt</w>
+				<lb n="23" /><w>anginn</w> <w>oferstigan</w> · <w>mid</w> <w>dẏsilicere</w> <w>dẏrstignesse</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+				<lb n="24" /><w>bið</w> <w>he</w> <w>þam</w> <w>men</w> <w>gelic</w> <w>þe</w> <w>arærþ</w> <w>sume</w> <w>heage</w> <w>hlæddre</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+				<lb n="25" /><w>stihð</w> <w>be</w> <w>þære</w> <w>hlæddre</w> <w>stapum</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>oðþæt</w> <w>he</w> <w>to</w> <w>ðæm</w> <w>ænde</w> <w>be</w>
+				<lb n="26" /><w>cume</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>wylle</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+						<w>git</w> <w>stigan</w> <w>ufor</w> · <w>astihð</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+						<w>buton</w>
+				<lb n="27" />
+					<w><choice>
+						<abbr>stapū</abbr>
+						<expan>stapum</expan>
+					</choice></w>
+					· <w>oðþæt</w> <w>he</w> <w>stedeleas</w> <w>fẏlþ</w> <w>mid</w> <w>mẏcclum</w> <w>wẏrsan</w>
+				<lb n="28" /><w>fẏlle</w> <w>swa</w> <w>he</w> <w>furðor</w> <w>stah</w> · <w>Ðreo</w> <w>þing</w> <w>sẏnd</w> <w>on</w> <w>middan</w>
+				<lb n="29" /><w>earde</w> · <w>an</w> <w>is</w> <w>hwilwendlic</w> · <w>þe</w> <w>hæfð</w> <w>ægðer</w> <w>ge</w>
+					<w><choice>
+						<abbr>ordfrūman</abbr>
+						<expan>ordfrumman</expan>
+					</choice></w>
+				<lb n="30" /><w>ge</w> <w>ende</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>sẏnd</w> <w>nẏtenu</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ealle</w> <w>sawullease</w> <w>þing</w> <w>þe</w> <w>on</w>
+				<lb n="31" /><w>gunnan</w> <w>þa</w> <w>þa</w> <w>hi</w> <w>god</w> <w>gesceop</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>æft</w> <w>geændiað</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>to</w> <w>nahte</w>
+			<pb n="6r" facs="data/images/fol_6r.png" />
+				<lb n="32" /><w>gewurðaþ</w> · <w>Oðer</w> <w>þing</w> <w>is</w> <w>ece</w> · <w>swa</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>hit</w> <w>hæfð</w> <w>ordfruman</w> ·
+				<lb n="33" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>næfð</w> <w>nenne</w> <w>ende</w> · <w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w> <w>synd</w> <w>ænglas</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>manna</w> <w>saula</w> · <w>þeon</w>
+				<lb n="34" /><w>gunnen</w> <w>ða</w> <w>þa</w> <w>hi</w> <w>god</w> <w>gesceop</w> · <w>ac</w> <w>hi</w> <w>ne</w> <w>geendiað</w> <w>næfre</w> ·
+				<lb n="35" /><w>Ðridde</w> <w>þing</w> <w>is</w> <w>ece</w> · <w>swa</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>hit</w> <w>næfð</w> <w>naðor</w> <w>ne</w> <w>ordfruman</w>
+				<lb n="36" /><w>ne</w> <w>ende</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>se</w> <w>ana</w> <w>ælmihtiga</w> <w>god</w> <w>on</w> <w>þrẏnnesse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					 <w>on</w>
+				<lb n="37" /><w>annẏsse</w> · <w>æfre</w> <w>wuniende</w> <w>unasmeagendlic</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>unasæcgend
+				<lb n="38" />lic</w> · <w>Se</w> <w>fæder</w> <w>is</w> <w>angin</w> · <w>of</w>
+					<w><choice>
+						<abbr>nanū</abbr>
+						<expan>nanum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>oðrū</abbr>
+						<expan>oðrum</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>sunu</w> <w>is</w> <w>angin</w> ·
+				<lb n="39" /><w>æfre</w> <w>of</w> <w>þæm</w> <w>fæder</w> <w>acenned</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>halga</w> <w>gast</w> <w>is</w> <w>angin</w> ·
+				<lb n="40" /><w>æfre</w> <w>of</w> <w>þam</w> <w>fæder</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>of</w> <w>þam</w> <w>sunu</w> · <w>na</w> <w>acenned</w> <w>ac</w> <w>forð</w>
+				<lb n="41" /><w>stæppende</w> · <w>for</w> <w>ðan</w> <w>þe</w> <w>se</w> <w>sunu</w> <w>is</w> <w>þæs</w> <w>fæder</w> <w>wisdom</w> · <w>of</w>
+				<lb n="42" /><w>him</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mid</w> <w>him</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>halga</w> <w>gast</w> <w>is</w> <w>heora</w> <w>begra</w> <w>wẏlle</w> ·
+				<lb n="43" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>lufu</w> · <w>of</w> <w>him</w> <w>bam</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mid</w> <w>him</w> <w>bam</w> · <w>On</w> <w>ðisne</w> <w>enne</w> <w>god</w>
+				<lb n="44" /><w>we</w> <w>sceolon</w> <w>geleafan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hine</w> <w>mid</w>
+					<w><choice>
+						<abbr>weorcū</abbr>
+						<expan>weorcum</expan>
+					</choice></w>
+					<w>wurðian</w> · <w>forðan</w> ·
+				<lb n="45" /><w>þe</w> <w>ealle</w> <w>þa</w> <w>halgan</w> <w>bec</w> <w>ægðer</w> <w>ge</w> <w>on</w> <w>þære</w> <w>ealdan</w> · <w>æ</w> · <w>ge</w>
+				<lb n="46" /><w>on</w> <w>þære</w> <w>niwan</w> <w>soðlice</w> <w>sprecað</w> <w>be</w> <w>þere</w> <w>halgan</w> <w>ðrẏn
+				<lb n="47" />nẏsse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>soðre</w> <w>annẏsse</w> · <w>Þæs</w> <w>an</w> <w>scẏppend</w> <w>wat</w> <w>ealle</w>
+				<lb n="48" /><w>þing</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gesihð</w> <w>ge</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>gedon</w> <w>is</w> · <w>ge</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>þe</w> <w>nu</w> <w>is</w> · <w>ge</w> <w>þæt</w> <w>ðe</w> <w>toweard</w>
+				<lb n="49" /><w>is</w> · <w>ne</w> <w>he</w> <w>nan</w> <w>þing</w> <w>ne</w> <w>forgit</w> · <w>ne</w> <w>him</w> <w>nan</w> <w>þing</w> <w>ætfleon</w>
+				<lb n="50" /><w>ne</w> <w>mæg</w> · <w>Ne</w> <w>ondret</w> <w>he</w> <w>him</w> <w>nanes</w> <w>þinges</w> · <w>for</w> <w>ðan</w> <w>þe</w>
+				<lb n="51" /><w>he</w> <w>næfð</w> <w>nenne</w> <w>riccran</w> · <w>ne</w> <w>furðon</w> <w>nanne</w> <w>him</w> <w>gelic
+				<lb n="52" />ne</w> · <w>Sẏmble</w> <w>he</w> <w>bið</w> <w>gẏfende</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>he</w> <w>ne</w> <w>wanað</w> <w>swaþæh</w> <w>nan</w>
+				<lb n="53" /><w>þing</w> <w>his</w> · <w>ne</w> <w>him</w> <w>nanes</w> <w>þinges</w> <w>nis</w> <w>neodþearf</w> · <w>Sẏmble</w>
+				<lb n="54" /><w>he</w> <w>bið</w> <w>ælmihtig</w> <w>god</w> · <w>for</w> <w>ðan</w> <w>ðe</w> <w>he</w> <w>sẏmble</w> <w>wẏle</w> <w>god</w> ·
+				<lb n="55" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>næfre</w> <w>nan</w> <w>ẏfel</w> · <w>ac</w> <w>he</w> <w>hatað</w> <w>þa</w> <w>ẏfelwẏrcendan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+				<lb n="56" /><w>þa</w> <w>unrihtwisan</w> · <w>Ða</w> <w>gesceafta</w> <w>þe</w> <w>þæs</w> <w>an</w> <w>scẏppend</w>
+				<lb n="57" /><w>gesceop</w> <w>sẏnden</w> <w>mænigfealde</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mislices</w> <w>hiwes</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>un
+				<lb n="58" />gelice</w> <w>farað</w> · <w>Sume</w> <w>sindon</w> <w>ungesewenlice</w> <w>gastas</w> ·
+				<lb n="59" /><w>butan</w> <w>lichoman</w> <w>swa</w> <w>swa</w> <w>sẏnd</w> <w>ænglas</w> <w>on</w> <w>heofonum</w> ·
+				<lb n="60" /><w>Sume</w> <w>sẏndan</w> <w>creopende</w> <w>on</w> <w>eorðan</w> · <w>mid</w>
+					<w><choice>
+						<abbr>eallū</abbr>
+						<expan>eallum</expan>
+					</choice></w>
+					<w>licho
+				<lb n="61" />man</w> · <w>swa</w> <w>swa</w> <w>wurmas</w> <w>doð</w> · <w>Sume</w> <w>gað</w> <w>on</w>
+					<w><choice>
+						<abbr>twā</abbr>
+						<expan>twam</expan>
+					</choice></w>
+					<w>fotum</w> ·
+				<lb n="62" /><w>sume</w> <w>on</w> <w>feower</w>
+					<w><choice>
+						<abbr>fotū</abbr>
+						<expan>fotum</expan>
+					</choice></w> ·
+					<w>Sume</w> <w>fleoð</w> <w>mid</w>
+					<w><choice>
+						<abbr>fẏðerū</abbr>
+						<expan>fẏðerum</expan>
+					</choice></w> ·
+					<w>Sume</w>
+				<lb n="63" /><w>on</w> <w>flodum</w> <w>swimmað</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hi</w> <w>ealle</w> <w>swaþæh</w> <w>alotene</w> <w>beoð</w>
+			<pb n="6v" facs="data/images/fol_6v.png" />
+				<lb n="64" /><w>to</w> <w>þære</w> <w>eorðanweard</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þider</w> <w>wilniað</w> · <w>oððe</w> <w>þæs</w> <w>þe</w> <w>him</w> <w>lẏst</w> ·
+				<lb n="65" /><w>oððe</w> <w>þæs</w> <w>þe</w> <w>hi</w> <w>beþurfon</w> · <w>ac</w> <w>se</w> <w>man</w> <w>ana</w> <w>gæð</w> <w>uprihte</w> ·
+				<lb n="66" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>getacnað</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>sceall</w> <w>ma</w> <w>þæncan</w> <w>upp</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>nyðer</w> ·
+				<lb n="67" /><w>þe</w> <w>læs</w> <w>þe</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>mod</w> <w>sẏ</w> <w>neoðer</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>se</w> <w>lichoma</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>he</w> <w>sceal</w> <w>smea
+				<lb n="68" />gen</w> <w>embe</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>æce</w> <w>lif</w> · <w>þe</w> <w>he</w> <w>to</w> <w>gesceapen</w> <w>wæs</w> · <w>Swiðor</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>embe</w>
+				<lb n="69" /><w>þa</w> <w>eorðlican</w> <w>þing</w> · <w>swa</w> <w>swa</w> <w>his</w> <w>wæstm</w> <w>him</w> <w>gebicnað</w> ·
+				<lb n="70" /><w>Ealle</w> <w>þas</w> <w>gesceafta</w> <w>habbað</w> <w>anginn</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>sume</w> <w>eac</w> <w>en
+				<lb n="71" />de</w> <w>swa</w> <w>swa</w> <w>we</w> <w>ær</w> <w>cwædon</w> · <w>ac</w> <w>se</w> <w>soða</w> <w>scẏppend</w> · <w>Næfð</w>
+				<lb n="72" /><w>nan</w> <w>angin</w> · <w>for</w> <w>ðan</w> <w>þe</w> <w>he</w> <w>is</w> <w>him</w> <w>sẏlf</w> <w>angin</w> · <w>na</w> <w>gescea
+				<lb n="73" />pen</w> · <w>ne</w> <w>geworht</w> · <w>Se</w> <w>geworhte</w> <w>ealle</w> <w>þing</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>wunað</w> · <w>a</w> ·
+				<lb n="74" /><w>on</w> <w>æcnẏsse</w> · <w>Hine</w> <w>ne</w> <w>mihte</w> <w>nan</w> <w>þing</w> <w>gewẏrcean</w> ·
+				<lb n="75" /><w>for</w> <w>ðon</w> <w>þe</w> <w>nan</w> <w>þing</w> <w>næs</w> <w>ær</w> <w>he</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gif</w> <w>he</w> <w>geworht</w> <w>wære</w>
+				<lb n="76" /><w>ne</w> <w>wurde</w> <w>he</w> <w>næfre</w> <w>ælmihtig</w> <w>god</w> · <w>Æft</w> <w>gif</w> <w>hwẏlc</w> <w>ge
+				<lb n="77" />wytleas</w> <w>man</w> · <w>wenð</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>hine</w> <w>sẏlfne</w> <w>geworhte</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+				<lb n="78" /><w>axie</w> <w>we</w> <w>hu</w> <w>he</w> <w>mihte</w> <w>hine</w> <w>sẏlfne</w> <w>gewẏrcean</w> <w>gif</w> <w>he</w>
+				<lb n="79" /><w>ær</w> <w>nes</w> · <w>He</w> <w>wæs</w> <w>æfre</w> <w>ungeworht</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>æfre</w> <w>wunað</w> <w>un
+				<lb n="80" />geændod</w> · <w>His</w> <w>we</w> <w>magon</w> <w>wundrian</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>we</w> <w>ne</w> <w>magon</w> ·
+				<lb n="81" /><w>ne</w> <w>ne</w> <w>motan</w> · <w>na</w> <w>furðor</w> <w>embe</w> <w>þis</w> <w>smeagen</w> · <w>gif</w> <w>we</w>
+				<lb n="82" /><w>nellað</w> <w>us</w> <w>sẏlfe</w> <w>forpæran</w> · <w>Seo</w> <w>sunne</w> <w>þe</w> <w>onliht</w>
+				<lb n="83" /><w>ealne</w> <w>mideard</w> <w>is</w> <w>godes</w> <w>gesceaft</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>we</w> <w>magon</w> <w>un
+				<lb n="84" />derstandan</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>hẏre</w> <w>leoht</w> <w>is</w> <w>of</w> <w>hẏre</w> · <w>na</w> <w>heo</w> <w>of</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+				<lb n="85" /><w>leohte</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w> <w>hætu</w> <w>gæð</w> <w>of</w> <w>þære</w> <w>sunnan</w> · <w>and</w> <w>of</w> <w>hire</w> <w>leoh
+				<lb n="86" />te</w> <w>gelice</w> · <w>Swa</w> <w>eac</w> <w>þæs</w> <w>ælmihtigan</w> <w>godes</w> <w>sunu</w> <w>is</w>
+				<lb n="87" /><w>æfre</w> <w>of</w> <w>þæm</w> <w>fæder</w> <w>acenned</w> · <w>soð</w> <w>leoht</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>soð</w>
+					<w><choice>
+						<abbr>wisdō</abbr>
+						<expan>wisdom</expan>
+					</choice></w> ·
+				<lb n="88" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>halga</w> <w>gast</w> <w>is</w> <w>æfre</w> <w>of</w> <w>him</w> <w>bam</w> · <w>na</w> <w>acenned</w> ·
+				<lb n="89" /><w>ac</w> <w>forðsteppende</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>sunu</w> <w>ana</w> · <w>underfæng</w> <w>men
+				<lb n="90" />niscnẏsse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>on</w>
+					<w>þis<choice>
+						<abbr>ū</abbr>
+						<expan>um</expan>
+					</choice></w>
+					<w>dege</w> <w>wearð</w> <w>to</w> <w>menn</w> <w>geboren</w> ·
+				<lb n="91" /><w>to</w> <w>þi</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>wolde</w> <w>us</w> <w>to</w> <w>his</w> <w>rice</w> <w>gefæccan</w> · <w>Nis</w> <w>na
+				<lb n="92" />n<choice>
+						<abbr>ū</abbr>
+						<expan>um</expan>
+					</choice></w>
+					<w>menn</w> <w>on</w> <w>ðisum</w> <w>deadlican</w> <w>life</w>
+					<w>libbend<choice>
+						<abbr>ū</abbr>
+						<expan>um</expan>
+					</choice></w>
+					<w>nanes</w>
+				<lb n="93" /><w>þinges</w> · <w>swa</w> <w>mẏcel</w> <w>neod</w> · <w>swa</w> <w>him</w> <w>bið</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>cunne</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+				<lb n="94" />ælmihtigan god mid geleafan ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>siþþan</w> <w>his</w> <w>agene</w>
+				<lb n="95" /><w>sawle</w> · <w>We</w> <w>habbað</w> <w>eow</w> <w>oft</w> <w>gesæd</w> <w>eowerne</w> <w>geleafan</w>
+			<pb n="7r" facs="data/images/fol_7r.png" />
+				<lb n="96" /><w>be</w> <w>þære</w> <w>halgan</w> <w>ðrẏnnẏsse</w> · <w>Nu</w> <w>wẏlle</w> <w>we</w> <w>eow</w>
+					<w><choice>
+						<abbr>sū</abbr>
+						<expan>sum</expan>
+					</choice></w>
+					<w>þing</w>
+				<lb n="97" /><w>be</w> <w>eowre</w> <w>sawle</w> <w>sæccgan</w> · <w>sceortlice</w> <w>gif</w> <w>we</w> <w>magon</w> ·
+				<lb n="98" /><w>Ealle</w> <w>þa</w> <w>geleaffullan</w> <w>fæderas</w> <w>þe</w> <w>godes</w> <w>lare</w> <w>awri
+				<lb n="99" />ton</w> · <w>sædon</w> <w>untwẏlice</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>geþwærlehton</w> <w>on</w> <w>þam</w>
+					<w><choice>
+						<abbr>anū</abbr>
+						<expan>anum</expan>
+					</choice></w> ·
+				<lb n="100" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>god</w> <w>gescẏpð</w> <w>ælces</w> <w>mannes</w> <w>sawle</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w> <w>sawl</w> <w>nis</w>
+				<lb n="101" /><w>na</w> <w>of</w> <w>godes</w> <w>agenum</w> <w>gecẏnde</w> · <w>Gif</w> <w>heo</w> <w>wære</w> <w>of</w> <w>go
+				<lb n="102" />des</w> <w>gecẏnde</w> <w>genumen</w> · <w>witodlice</w> <w>ne</w> <w>mihte</w> <w>heo</w> <w>sin
+				<lb n="103" />gian</w> · <w>Þam</w> <w>men</w> <w>is</w> <w>gecẏndelic</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>he</w> <w>lufige</w> <w>þæt</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>god</w>
+				<lb n="104" /><w>is</w> · <w>Hwæt</w> <w>is</w> <w>god</w> <w>butan</w> <w>gode</w> <w>anum</w> <w>se</w> <w>þe</w> <w>is</w> <w>healic</w>
+				<lb n="105" /><w><choice>
+						<abbr>godniss̄</abbr>
+						<expan>godnisse</expan>
+					</choice></w> ·
+					<w>butan</w> <w>þam</w> <w>ne</w> <w>mæg</w> <w>nan</w> <w>man</w> <w>nan</w> <w>þing</w>
+				<lb n="106" /><w>godes</w> <w>habban</w> · <w>Ðas</w> <w>godnẏsse</w> <w>we</w> <w>sceolan</w> <w>simble</w>
+				<lb n="107" /><w>lufian</w> <w>þe</w> <w>us</w> <w>ælc</w> <w>god</w> <w>ofcẏmþ</w> · <w>ac</w> <w>þissere</w> <w>godnẏsse</w>
+				<lb n="108" /><w>lufu</w> <w>ne</w> <w>mæg</w> <w>beon</w> <w>butan</w> <w>on</w> <w>þære</w> <w>sawle</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w> <w>an</w>
+				<lb n="109" /><w>sawul</w> <w>is</w> <w>æðelboren</w> <w>þe</w>
+					<w><choice>
+						<abbr>ðonn̄</abbr>
+						<expan>ðonne</expan>
+					</choice></w>
+					<w>lufað</w> <w>þe</w> <w>heo</w>
+					<w><choice>
+						<abbr>frā</abbr>
+						<expan>fram</expan>
+					</choice></w>
+					<w>com</w> ·
+				<lb n="110" /><w>þe</w> <w>hi</w> <w>þẏllice</w> <w>gesceop</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>on</w> <w>hire</w> <w>andgẏte</w> <w>habban</w>
+				<lb n="111" /><w>mihte</w> <w>godes</w> <w>anlicnesse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gelicnẏsse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þæs</w> <w>wẏrðe</w>
+				<lb n="112" /><w>wære</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>hẏre</w> <w>god</w> <w>onwunode</w> · <w>Uþwẏtan</w> <w>sæcgað</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+				<lb n="113" /><w>þære</w> <w>sawle</w> <w>gecẏnd</w> <w>is</w> <w>ðrẏfeald</w> · <w>An</w> <w>dæl</w> <w>is</w> <w>on</w> <w>hire</w>
+				<lb n="114" /><w>gewẏlnigendlic</w> · <w>oðer</w> <w>ẏrsigendlic</w> · <w>þrẏdde</w> <w>gescead
+				<lb n="115" />wislic</w> · <w>Twægen</w> <w>þissera</w> <w>dæla</w> <w>habbað</w> <w>deor</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>nẏtenu</w>
+				<lb n="116" /><w>mid</w> <w>us</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>gewẏlnunge</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ẏrre</w> · <w>Se</w> <w>man</w> <w>ana</w> <w>hæfð</w>
+				<lb n="117" /><w>gescead</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ræd</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>andgit</w> · <w>Gewẏlnung</w> <w>is</w> <w>þam</w> <w>menn</w>
+				<lb n="118" /><w>forgifen</w> <w>to</w> <w>gewilnienne</w> <w>þa</w> <w>ðing</w> <w>þe</w> <w>him</w> <w>fremiað</w>
+				<lb n="119" /><w>to</w> <w>nitwẏrðum</w> <w>þingum</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>to</w> <w>þære</w> <w>ecan</w> <w>hæle</w> ·
+					<w><choice>
+						<abbr>Þonn̄</abbr>
+						<expan>Þonne</expan>
+					</choice></w>
+					<w>gif</w>
+				<lb n="120" /><w>seo</w> <w>gewẏlnung</w> <w>miswent</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>acenð</w> <w>he</w> <w>gẏfernẏsse</w> ·
+				<lb n="121" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>forlẏgr</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w> <w>gitsunge</w> · <w>Ẏrre</w> <w>is</w> <w>ðære</w> <w>sawle</w> <w>forgi
+				<lb n="122" />fen</w> · <w>to</w> <w>ðẏ</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>ẏrsige</w> <w>ongean</w> <w>leahtres</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ne</w> <w>beo</w>
+				<lb n="123" /><w>na</w> <w>sẏnnum</w> <w>underþeodd</w> · <w>for</w> <w>þan</w> <w>ðe</w> <w>crist</w> <w>cwæð</w> ·
+				<lb n="124" /><w>ælc</w> <w>þæra</w> <w>þe</w> <w>sẏnna</w> <w>wẏrcð</w> · <w>is</w> <w>þæra</w> <w>sẏnna</w> <w>ðeow</w> · <w>Gif</w>
+				<lb n="125" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>ẏrre</w> <w>bið</w> <w>on</w> <w>ẏfel</w> <w>awend</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>cẏmð</w> <w>of</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>unrot
+				<lb n="126" />nisse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>æmẏlnẏsse</w> · <w>Gescead</w> <w>is</w> <w>ðære</w> <w>sawle</w> <w>forgi
+				<lb n="127" />fen</w> <w>to</w> <w>gewẏssiene</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w> <w>to</w> <w>stẏrenne</w> <w>hire</w> <w>agen</w> <w>lif</w> ·
+			<pb n="7v" facs="data/images/fol_7v.png" />
+				<lb n="128" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ealle</w> <w>hire</w> <w>dæda</w> · <w>Of</w> <w>þam</w> <w>gesceade</w> <w>gif</w> <w>hit</w> <w>miswænt</w> · <w>cẏmð</w>
+				<lb n="129" /><w><choice>
+						<abbr>modignyss̄</abbr>
+						<expan>modignysse</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ẏdelgẏlp</w> · <w>Gescead</w> <w>wexð</w> <w>on</w>
+					<w><choice>
+						<abbr>cildrū</abbr>
+						<expan>cildrum</expan>
+					</choice></w>
+					<w>na</w> <w>seo</w>
+				<lb n="130" /><w>sawul</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w> <w>sawul</w> <w>þihþ</w> <w>on</w>
+					<w><choice>
+						<abbr>mægenū</abbr>
+						<expan>mægenum</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ne</w> <w>bið</w> <w>na</w> <w>mare</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+				<lb n="131" /><w>heo</w> <w>æt</w> <w>fruman</w> <w>wæs</w> <w>ac</w> <w>bið</w> <w>betere</w> <w>ne</w> <w>heo</w> <add place="above">ne</add> <w>underfæhð</w> <w>li
+				<lb n="132" />chomlice</w> <w>mẏcelnysse</w> · <w>Seo</w> <w>sawul</w> <w>hæfð</w> <w>swa</w> <w>swa</w> <w>we</w> <w>ær</w>
+				<lb n="133" /><w>cwædon</w> <w>on</w> <w>hire</w> <w>gecẏnde</w> · <w>þære</w> <w>halgan</w> <w>þrẏnnẏsse</w>
+				<lb n="134" /><w>anlicnẏsse</w> · <w>on</w> <w>þan</w> <w>þe</w> <w>heo</w> <w>hæfð</w> <w>gemẏnd</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>andgit</w> ·
+				<lb n="135" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>wẏllan</w> · <w>An</w> <w>sawul</w> <w>is</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>an</w> <w>lif</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>an</w> <w>edwist</w> · <w>þe</w> <w>þas</w> <w>ðreo</w>
+				<lb n="136" /><w>þing</w> <w>hæfð</w> <w>on</w> <w>hire</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þas</w> <w>ðreo</w> <w>þing</w> <w>na</w> <w>sẏnd</w> <w>na</w> <w>ðreo</w>
+				<lb n="137" /><w>lif</w> <w>ac</w> <w>an</w> · <w>ne</w> <w>þreo</w> <w>ædwiste</w> <w>ac</w> <w>an</w> · <w>Seo</w> <w>sawul</w> <w>oððe</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+				<lb n="138" /><w>lif</w> · <w>oððe</w> <w>seo</w> <w>edwist</w> · <w>sẏnd</w> <w>gecwædene</w> <w>to</w> <w>hẏre</w> <w>sẏlfra</w> ·
+				<lb n="139" />
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>gemẏnd</w> · <w>oððe</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>andgit</w> · <w>oþþe</w> <w>seo</w> <w>wẏlla</w> · <w>beoð</w> <w>gecwæ
+				<lb n="140" />dene</w> <w>to</w>
+					<w><choice>
+						<abbr>sumū</abbr>
+						<expan>sumum</expan>
+					</choice></w>
+					<w>þinga</w> · <w>edlesendlice</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þas</w> <w>ðreo</w> <w>þing</w>
+				<lb n="141" /><w>habbað</w> <w>annẏsse</w> <w>him</w> <w>betwẏnan</w> · <w>Ic</w> <w>undergẏte</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+				<lb n="142" /><w>ic</w> <w>wẏlle</w> <w>undergẏtan</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gemunan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ic</w> <w>wẏlle</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>ic</w> <w>under
+				<lb n="143" />gẏte</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gemune</w> · <w>þær</w> <w>þær</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>gemẏnd</w> <w>bið</w> · <w>þær</w> <w>bið</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>and
+				<lb n="144" />gẏt</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w> <w>wẏlla</w> · <w>Uton</w> <w>nu</w> <w>behealden</w> <w>þa</w> <w>wundorlican</w>
+				<lb n="145" /><w>swẏftnẏsse</w> <w>þære</w> <w>sawle</w> · <w>heo</w> <w>hæfð</w> <w>swa</w> <w>mẏcele</w> <w>swẏft
+				<lb n="146" />nẏsse</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>on</w> <w>anre</w> <w>tide</w> <w>gif</w> <w>heo</w> <w>swa</w> <w>wẏle</w> · <w>besceawað</w>
+				<lb n="147" /><w>heofonan</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ofer</w> <w>sæ</w> <w>flẏhð</w> · <w>land</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>burga</w> <w>geondfærð</w> ·
+				<lb n="148" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ealle</w> <w>þas</w> <w>þing</w> <w>mid</w> <w>geþohte</w> <w>on</w> <w>hire</w> <w>sihðe</w> <w>gesæt</w> ·
+				<lb n="149" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>swa</w> <w>hraðe</w> <w>swa</w> <w>heo</w> <w>gehẏrð</w> <w>þære</w> <w>burge</w> <w>naman</w> ·
+				<lb n="150" /><w>þe</w> <w>heo</w> <w>ær</w> <w>cuðe</w> · <w>swa</w> <w>hraðe</w> <w>heo</w> <w>mæg</w> <w>þa</w> <w>burh</w> <w>on</w> <w>hire</w>
+				<lb n="151" /><w>geþohte</w> <w>gescẏppan</w> <w>hwẏlc</w> <w>heo</w> <w>bið</w> · <w>Eal</w> <w>swa</w> <w>be</w> <w>gehwẏl
+				<lb n="152" />cum</w> <w>oðrum</w> <w>þingum</w> <w>þe</w> <w>heo</w> <w>ær</w> <w>cuþe</w> · <w>oððe</w> <w>ne</w> <w>cuðe</w> ·
+				<lb n="153" /><w>heo</w> <w>mæg</w> <w>on</w> <w>hire</w> <w>mode</w> <w>gescẏppan</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>gehẏrð</w>
+				<lb n="154" /><w>be</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>spræcan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>swa</w> <w>stẏrigende</w> <w>is</w> <w>seo</w> <w>sawul</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w>
+				<lb n="155" /><w>furðon</w> <w>on</w> <w>slæpe</w> <w>ne</w> <w>gestẏlþ</w> · <w>ac</w>
+					<w><choice>
+						<abbr>ðonn̄</abbr>
+						<expan>ðonne</expan>
+					</choice></w>
+					<w>he</w> <w>smeað</w> <w>be</w> <w>ro
+				<lb n="156" />me</w> <w>bẏrig</w> <w>ne</w> <w>mæg</w> <w>heo</w> <w>þa</w> <w>hwile</w> <w>smeagen</w> <w>be</w> <w>hieru
+				<lb n="157" />salem</w> · <w>oððe</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>smeað</w> <w>be</w> <w>anum</w> <w>þing</w> · <w>ne</w> <w>mæg</w>
+				<lb n="158" /><w>heo</w> <w>þa</w> <w>hwẏle</w> <w>be</w>
+					<w><choice>
+						<abbr>oðrū</abbr>
+						<expan>oðrum</expan>
+					</choice></w>
+					<w>þinge</w> <w>smeagen</w> · <w>ac</w> <w>bið</w> <w>gebẏs
+				<lb n="159" />god</w> <w>mid</w> <w>þam</w>
+					<w><choice>
+						<abbr>anū</abbr>
+						<expan>anum</expan>
+					</choice></w>
+					<w>ðinge</w>
+					<w><choice>
+						<abbr>oðꝥ</abbr>
+						<expan>oðþæt</expan>
+					</choice></w>
+					<w>þæt</w> <w>geþoht</w> <w>gewẏte</w> ·
+			<pb n="8r" facs="data/images/fol_8r.png" />
+				<lb n="160" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>oðer</w> <w>cume</w> · <w>Witodlice</w> <w>god</w> <w>ælmihtig</w> <w>wat</w> <w>ealle</w> <w>þing</w> <w>togæ
+				<lb n="161" />dere</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ealle</w> <w>þing</w> <w>hæfð</w> <w>on</w> <w>his</w>
+					<w><choice>
+						<abbr>andwerdnẏss̄</abbr>
+						<expan>andwerdnẏsse</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hi</w> <w>æfre</w>
+				<lb n="162" /><w>beoþ</w> <w>on</w> <w>his</w> <w>gesihþe</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>næfre</w> <w>him</w> <w>uncuþe</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þis</w> <w>is</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+				<lb n="163" /><w>gecwæden</w> <w>is</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>god</w> <w>is</w> <w>æghwær</w> <w>eall</w> · <w>for</w> <w>ðan</w> <w>ðe</w> <w>ealle</w> <w>þing</w>
+				<lb n="164" /><w>þe</w> <w>æfre</w> <w>wæron</w> <w>oððe</w> <w>nu</w> <w>sẏnd</w> · <w>oþþe</w> <w>ða</w> <w>þe</w> <w>towearde</w> <w>sẏnd</w> ·
+				<lb n="165" /><w>ealle</w> <w>hi</w> <w>sẏnd</w> <w>on</w> <w>godes</w> <w>gesihðe</w> · <w>anwearde</w> · <w>na</w> <w>æne</w> · <w>ac</w>
+				<lb n="166" /><w>æfre</w> · <w>Seo</w> <w>sawul</w> <w>soðlice</w> <w>is</w> <w>þæs</w> <w>lichoman</w> <w>lif</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þære</w>
+				<lb n="167" /><w>sawle</w> <w>lif</w> <w>is</w> <w>god</w> · <w>Gif</w> <w>seo</w> <w>sawul</w> <w>forlæt</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>lichoman</w>
+				<lb n="168" /><w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>swælt</w> <w>seo</w> <w>lichoma</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gif</w> <w>god</w> <w>forlæt</w> <w>þa</w> <w>sawle</w> <w>for</w>
+				<lb n="169" /><w><choice>
+						<abbr>ormættū</abbr>
+						<expan>ormættum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>synnū</abbr>
+						<expan>synnum</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>swælt</w> <w>heo</w> <w>on</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>sælran</w> <w>dæle</w>
+				<lb n="170" /><w>swa</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>bið</w> <w>forloren</w> <w>þam</w> <w>ecan</w> <w>life</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>swaþeah</w>
+				<lb n="171" /><w>næfre</w> <w>ne</w> <w>geendað</w> <w>on</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>ecū</abbr>
+						<expan>ecum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>wẏtū</abbr>
+						<expan>wẏtum</expan>
+					</choice></w> ·
+					<w>Þæs</w> <w>dæð</w> <w>hire</w>
+				<lb n="172" /><w>gelimpð</w> · <w>gif</w> <w>heo</w> <w>læt</w> <w>rixian</w> <w>on</w> <w>hire</w> <w>þa</w> <w>gewilnunge</w>
+				<lb n="173" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>ẏrre</w> · <w>swiðor</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>gescead</w> <w>þe</w> <w>hi</w> <w>gewẏsigen</w> <w>sceall</w>
+				<lb n="174" /><w>to</w> <w>weldædum</w> · <w>a</w> · <w>Ðuruh</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>gescead</w> <w>ana</w> <w>we</w> <w>sẏnd</w> <w>sæl
+				<lb n="175" />ran</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w> <w>þa</w> <w>ungesceadwẏsan</w> <w>nẏtenu</w> · <w>Mid</w> <w>twam</w>
+				<lb n="176" /><w><choice>
+						<abbr>wurðscipū</abbr>
+						<expan>wurðscipum</expan>
+					</choice></w>
+					<w>geglængde</w> <w>se</w> <w>ælmihtiga</w> <w>scẏppend</w> <w>þæs</w>
+				<lb n="177" /><w>mannes</w> <w>sawle</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>mid</w> <w>æccnẏsse</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>eadignẏsse</w> ·
+				<lb n="178" /><w>Ac</w> <w>heo</w> <w>forleas</w> <w>þa</w> <w>e<add place="above">a</add>dignẏsse</w> <w>þa</w> <w>ða</w> <w>he</w> <w>agẏlte</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>heo</w>
+				<lb n="179" /><w>ne</w> <w>mihte</w> <w>þa</w> <w>æcnẏsse</w> <w>forleosan</w> · <w>for</w> <w>ðan</w> <w>þe</w> <w>heo</w>
+				<lb n="180" /><w>ne</w> <w>geendað</w> <w>næfre</w> · <w>Þære</w> <w>sawle</w> <w>wlẏte</w> <w>is</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>hæb
+				<lb n="181" />be</w> <w>mihte</w> · <w>swa</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>leahtres</w> <w>forbuge</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>heo</w> <w>bið</w> <w>atelic</w>
+				<lb n="182" /><w>þurh</w> <w>leahtras</w> <w>gif</w> <w>he</w> <w>him</w> <w>underlið</w> · <w>Ðære</w> <w>sawle</w>
+				<lb n="183" /><w>mihta</w> <w>syndon</w> <w>þas</w> <w>feower</w> <w>fẏrmestan</w> · <w>and</w> <w>sælestan</w> · <foreign xml:lang="la">pru
+				<lb n="184" />dentia</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>snoternẏsse</w> · <w>þurh</w> <w>þa</w> <w>heo</w> <w>sceal</w> <w>hẏre</w> <w>scip
+				<lb n="185" />pend</w> <w>understandan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hine</w> <w>lufian</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>tosceaden</w> <w>god</w>
+				<lb n="186" /><w><choice>
+						<abbr>frā</abbr>
+						<expan>fram</expan>
+					</choice></w>
+					<w>ẏfele</w> · <w>Oðer</w> <w>mægen</w> <w>is</w> · <foreign xml:lang="la">Iustitia</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>rihtwisnẏs</w> ·
+				<lb n="187" /><w>þurh</w> <add place="margin"><w>þa</w></add> <w>heo</w> <w>sceal</w> <w>god</w> <w>wurðigan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>rihtlice</w> <w>libban</w> ·
+					<w><choice>
+						<abbr>Ꝥ</abbr>
+						<expan>Þæt</expan>
+					</choice></w>
+				<lb n="188" /><w>ðrẏdde</w> <w>mægen</w> <w>is</w> · <foreign xml:lang="la">temperantia</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>gemetegung</w> · <w>mid</w>
+				<lb n="189" /><w>þære</w> <w>sceall</w> <w>seo</w> <w>sawul</w> <w>ealle</w> <w>þing</w> <w>gemætegian</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>hit</w>
+				<lb n="190" /><w>to</w> <w>swiþe</w> <w>ne</w> <w>sẏ</w> · <w>ne</w> <w>to</w> <w>hwonlice</w> · <w>for</w> <w>ðan</w> <w>þe</w> <w>hit</w> <w>is</w> <w>awrẏ
+				<lb n="191" />ten</w> · <foreign xml:lang="la"><w>Omnia</w> <w> nimia</w> <w>Nocent</w></foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>ealle</w> <w>oferdone</w>
+			<pb n="8v" facs="data/images/fol_8v.png" />
+				<lb n="192" /><w>þing</w> <w>dæriað</w> · <w>Witodlice</w> <w>gemetgung</w> <w>is</w> <w>eallra</w> <w>mæge
+				<lb n="193" />na</w> <w>modor</w> · <w>Þæt</w> <w>feorðe</w> <w>mægen</w> <w>is</w> · <foreign xml:lang="la">Fortitudo</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>stræn<add place="above">g</add>ð</w>
+				<lb n="194" /><w>oððe</w> <w>anrednẏss</w> · <w>þurh</w> <w>þa</w> <w>sceal</w> <w>seo</w> <w>sawul</w> <w>forbæ
+				<lb n="195" />ran</w> <w>earfoðnẏsse</w> <w>mid</w> <w>andrædum</w> <w>mode</w> · <w>for</w> <w>godes</w>
+				<lb n="196" /><w>lufan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>næfre</w> <w>þam</w> <w>deofle</w> <w>ne</w> <w>abugan</w> <w>to</w> <w>forwẏrde</w> ·
+				<lb n="197" /><w>Ðas</w> <w>feower</w> <w>mægenu</w> <w>habbbað</w> <w>ænne</w> <w>kẏnehelm</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w>
+				<lb n="198" /><w>seo</w> <w>soðe</w> <w>lufu</w> · <w>godes</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>manna</w> · <w>for</w> <w>ðan</w> <w>þe</w> <w>seo</w> <w>sawul</w>
+				<lb n="199" /><w>is</w> <w>gesælig</w> · <w>ðe</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>scẏppend</w> <w>lufað</w> <w>þe</w> <w>hi</w> <w>gesceop</w> ·
+				<lb n="200" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hire</w> <w>gefæran</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<add><w>wẏle</w></add> <w>him</w> <w>fremian</w> <w>swa</w> <w>heo</w> <w>fẏrmest</w>
+				<lb n="201" /><w>mæge</w> · <w>Seo</w> <w>sawul</w> <w>is</w> <w>gesceadwis</w> <w>gast</w> · <w>æfre</w> <w>cucu</w>
+				<lb n="202" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mæg</w> <w>underfon</w> <w>ge</w> <w>godne</w> <w>wẏllan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ẏfelne</w> · <w>æfter</w>
+				<lb n="203" /><w><choice>
+						<abbr>agenū</abbr>
+						<expan>agenum</expan>
+					</choice></w>
+					<w>cẏre</w> · <w>Se</w> <w>welwillende</w> <w>scẏppend</w> <w>læt</w> <w>hi</w> <w>hab
+				<lb n="204" />ben</w> <w>agenes</w> <w>cẏres</w> <w>geweald</w> · <w>þa</w> <w>wearð</w> <w>heo</w> <w>be</w>
+					<w><choice>
+						<abbr>agenū</abbr>
+						<expan>agenum</expan>
+					</choice></w>
+				<lb n="205" /><w>wẏllan</w> <w>gewæmmed</w> <w>þurh</w> <w>þæs</w> <w>deofles</w> <w>lare</w> · <w>Heo</w>
+				<lb n="206" /><w>wærð</w> <w>æft</w> <w>alẏsad</w> <w>þuruh</w> <w>godes</w> <w>gife</w> · <w>gif</w> <w>heo</w> <w>gode</w>
+				<lb n="207" /><w>gehẏrsumað</w> · <w>Heo</w> <w>is</w> <w>ungesæwenlic</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>unlichō</abbr>
+						<expan>unlichom</expan>
+					</choice>
+				<lb n="208" />lic</w> · <w>butan</w> <w>hæfe</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>butan</w> <w>bleo</w> · <w>mid</w> <w>þam</w> <w>licha
+				<lb n="209" />man</w> <w>befangen</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>on</w>
+					<w><choice>
+						<abbr>eallū</abbr>
+						<expan>eallum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>limū</abbr>
+						<expan>limum</expan>
+					</choice></w>
+					<w>wunigende</w> · <w>Ne</w>
+				<lb n="210" /><w>heo</w> <w>ne</w> <w>mæg</w> <w>be</w> <w>hẏre</w> <w>agenre</w> <w>mihte</w> <w>of</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>lichoman</w>
+				<lb n="211" /><w>gewẏtan</w> · <w>ne</w> <w>æft</w> <w>ongean</w> <w>cẏrran</w> · <w>butan</w> <w>se</w> <w>wẏlle</w> <w>þe</w> <w>hi</w>
+				<lb n="212" /><w>geworhte</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>on</w>
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>lichaman</w> <w>asænde</w> · <w>Heo</w> <w>is</w> <w>on</w>
+				<lb n="213" /><w><choice>
+						<abbr>bocū</abbr>
+						<expan>bocum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>manegū</abbr>
+						<expan>manegum</expan>
+					</choice></w>
+					<w>naman</w> <w>gecẏged</w> · <w>be</w> <w>hẏre</w> <w>weorces</w> <w>þe
+				<lb n="214" />nungum</w> · <w>Hẏre</w> <w>nama</w> <w>is</w> <foreign xml:lang="la">anima</foreign>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>sawul</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w>
+				<lb n="215" /><w>nama</w> <w>gelẏmpð</w> <w>to</w> <w>hire</w> <w>life</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<foreign xml:lang="la"><choice>
+						<abbr>Spr</abbr>
+						<expan>Spiritus</expan>
+					</choice></foreign>
+					<w>gast</w> · <w>belimpð</w>
+				<lb n="216" /><w>to</w> <w>hire</w> <w>ẏmbwlatunge</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">sensus</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>andgit</w> ·
+				<lb n="217" /><w>oððe</w> <w>felnẏss</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>gefret</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">animus</foreign> ·
+				<lb n="218" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>mod</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>wat</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">mens</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>mod</w>
+				<lb n="219" /><w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>understent</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">memoria</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>ge
+				<lb n="220" />mẏnd</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>gemanð</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">ratio</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>ge
+				<lb n="221" />scead</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>to</w> <w>scæt</w> · <w>Heo</w> <w>is</w> <foreign xml:lang="la">uoluntas</foreign> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w>
+				<lb n="222" /><w>wẏlla</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>heo</w> <w>hwæt</w> <w>wẏle</w> · <w>Ac</w> <w>swaþeah</w> <w>ealle</w>
+				<lb n="223" /><w>þas</w> <w>naman</w> <w>sẏndon</w> <w>sawul</w> · <w>ælc</w> <w>sawul</w> <w>is</w> <w>gast</w> · <w>ac</w>
+			<pb n="9r" facs="data/images/fol_9r.png" />
+				<lb n="224" /><w>swaþeah</w> <w>nis</w> <w>na</w> <w>ælc</w> <w>gast</w> <w>sawul</w> · <w>Se</w> <w>apostol</w> <w>paulus</w>
+				<lb n="225" /><w>totwæmde</w> <w>þæs</w> <w>gastes</w> <w>naman</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þæs</w> <w>modes</w> <w>þus</w> <w>cwæ
+				<lb n="226" />ðende</w> · <foreign xml:lang="la"><w>Psalla</w> <w>spiritu</w> <w>psalla</w> <w>et</w> <w>mente</w></foreign> · <w>Þæt</w> <w>is</w> <w>on</w> <w>æn
+				<lb n="227" />glisc</w> · <w>Ic</w> <w>singe</w> <w>mid</w> <w>gaste</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ic</w> <w>singe</w> <w>mid</w> <w>mode</w> · <w>Se</w>
+				<lb n="228" /><w>singð</w> <w>mid</w> <w>gaste</w> · <w>se</w> <w>ðe</w> <w>clẏpað</w> <w>þa</w> <w>word</w> <w>mid</w> <w>muðe</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ne</w>
+				<lb n="229" /><w>understænt</w> <w>þæs</w> <w>andgites</w> <w>getacnunge</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>se</w>
+					<w><choice>
+					<sic>sinðg</sic>
+					<corr>singð</corr>
+					</choice></w>
+				<lb n="230" /><w>mid</w> <w>mode</w> <w>se</w> <w>ðe</w> <w>þæs</w> <w>andgites</w> <w>getacnunge</w> <w>understænt</w> ·
+				<lb n="231" /><w>Seo</w> <w>sawul</w> <w>is</w> <w>þæs</w> <w>lichoman</w> <w>hlæfdige</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>heo</w> <w>gewissað</w>
+				<lb n="232" /><w>þa</w> <w>fif</w> <w>andgitu</w> <w>þæs</w> <w>lichaman</w> · <w>swa</w> <w>swa</w> <w>of</w> <w>cẏne
+				<lb n="233" />sætle</w> · <w>þa</w> <w>andgitu</w> <w>sint</w> <w>gehatene</w> <w>þus</w> · <foreign xml:lang="la">Uisus</foreign> ·
+				<lb n="234" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>gesihð</w> · <foreign xml:lang="la">auditus</foreign> · <w>hlẏst</w> · <foreign xml:lang="la">Gustus</foreign> · <w>swæc</w> <w>on</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+				<lb n="235" /><w>muðe</w> · <foreign xml:lang="la">Odoratus</foreign> · <w>stænc</w> · <w>on</w> <w>þæra</w> <w>nosa</w> · <foreign xml:lang="la">tactus</foreign> ·
+				<lb n="236" /><w>hrepung</w> · <w>oððe</w> <w>grapung</w> · <w>on</w>
+					<w><choice>
+						<abbr>eallū</abbr>
+						<expan>eallum</expan>
+					</choice></w>
+					<w>limum</w> · <w>ac</w> <w>þeah</w> <w>ge
+				<lb n="237" />wunelicost</w> <w>on</w> <w>þam</w>
+					<w><choice>
+						<abbr>handū</abbr>
+						<expan>handum</expan>
+					</choice></w> ·
+					<w>Ðas</w> <w>fif</w> <w>andgitu</w> <w>gewis
+				<lb n="238" />sæð</w> <w>seo</w> <w>sawul</w> <w>to</w> <w>hire</w> <w>wẏllan</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hẏre</w> <w>gedafnað</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w>
+				<lb n="239" /><w>swa</w> <w>swa</w> <w>hlæfdige</w> · <w>geornlice</w> <w>foresceawige</w> <w>hwæt</w> <w>heo</w>
+				<lb n="240" /><w><choice>
+						<abbr>gehwylcū</abbr>
+						<expan>gehwylcum</expan>
+					</choice></w>
+					lime bebeode to donne · oððe hwæt heo <w>ge
+				<lb n="241" /><choice>
+						<abbr>hwylcū</abbr>
+						<expan>hwylcum</expan>
+					</choice></w>
+					<w>lime</w> <w>geþafige</w> <w>on</w> <w>gewẏlnunge</w> <w>his</w> <w>gecẏndes</w> ·
+				<lb n="242" /><w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>þær</w> <w>nan</w> <w>þing</w> <w>unþæslice</w> <w>ne</w> <w>gelẏmpe</w> <w>on</w> <w>nanes</w>
+				<lb n="243" /><w>limes</w> <w>þenunge</w> · <w>Swa</w> <w>swa</w> <w>god</w> <w>ælmihtig</w> <w>oferstihð</w>
+				<lb n="244" /><w>ealle</w> <w>gesceafta</w> · <w>swa</w> <w>oferstihð</w> <w>seo</w> <w>sawul</w> <w>ealle</w>
+				<lb n="245" /><w><choice>
+						<abbr>lichālice</abbr>
+						<expan>lichamlice</expan>
+					</choice></w>
+					<w>gesceafta</w> <w>mid</w> <w>wurðfulnẏsse</w> <w>hẏre</w> <w>ge
+				<lb n="246" />cyndes</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>nan</w> <w>lichamlic</w> <w>gesceaft</w> <w>ne</w> <w>mæg</w> <w>beon</w> <w>hẏre</w>
+				<lb n="247" /><w>wiðmeten</w> · <w>We</w> <w>cwæden</w> <w>ær</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>wære</w> <w>butan</w> <w>bleo</w> ·
+				<lb n="248" /><w>for</w> <w>þan</w> <w>ðe</w> <w>heo</w> <w>nis</w> <w>na</w> <w><add place="above">licham</add>lic</w> · <w>On</w> <w>lichaman</w> <w>bið</w> <w>bleoh</w> ·
+				<lb n="249" /><w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>seo</w> <w>sawul</w> <w>bið</w> <w>swa</w> <w>gewlitegod</w> · <w>swa</w> <w>heo</w> <w>on</w> <w>worulde</w>
+				<lb n="250" /><w>geearnode</w> · <w>Be</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>cwæþ</w> <w>crist</w> <w>on</w> <w>his</w> <w>godspelle</w> ·
+				<lb n="251" /><foreign xml:lang="la"><w>Tunc</w> <w>iusti</w> <w>fulgebunt</w> <w>sicut</w> <w>sol</w> <w>in</w> <w>regno</w> <w>patris</w>
+				<lb n="252" /><w><choice>
+						<abbr>eorū</abbr>
+						<expan>eorum</expan>
+					</choice></w></foreign> ·
+					<w><choice>
+						<abbr>Ꝥ</abbr>
+						<expan>Þæt</expan>
+					</choice></w>
+					<w>ẏs</w> <w>on</w> <w>ænglisc</w> ·
+					<w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>scinað</w> <w>þa</w> <w>rihtwisan</w> <w>swa</w>
+				<lb n="253" /><w>swa</w> <w>sunne</w> <w>on</w> <w>heora</w> <w>fæder</w> <w>rice</w> · <w>Witodlice</w> <w>þa</w> <w>ar
+				<lb n="254" />leasan</w> <w>beoð</w> <w>heora</w>
+					<w><choice>
+						<abbr>ẏfelū</abbr>
+						<expan>ẏfelum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>weorcū</abbr>
+						<expan>weorcum</expan>
+					</choice></w>
+					<w>gelice</w> · <w>Nis</w> <w>seo</w>
+				<lb n="255" /><w>orþung</w> <w>þe</w> <w>we</w> <w>ut</w> <w>blawaþ</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>in</w> <w>ateoð</w> <w>oððe</w> <w>ure</w> <w>sawul</w>
+			<pb n="9v" facs="data/images/fol_9v.png" />
+				<lb n="256" /><w>ac</w> <w>is</w> <w>seo</w> <w>lẏft</w> <w>þe</w> <w>ealle</w> <w>lichamlice</w> <w>þing</w> <w>on</w> <w>lẏbbað</w> · <w>butan</w>
+				<lb n="257" /><w>fixum</w>
+					<w><choice>
+						<abbr>anū</abbr>
+						<expan>anum</expan>
+					</choice></w>
+					<w>þe</w> <w>on</w>
+					<w><choice>
+						<abbr>flodū</abbr>
+						<expan>flodum</expan>
+					</choice></w>
+					<w>lybbað</w> · <w>Oft</w> <w>bið</w> <w>seo</w> <w>sawul</w> <w>on</w>
+					<w><choice>
+						<abbr>anū</abbr>
+						<expan>anum</expan>
+					</choice></w>
+				<lb n="258" /><w>þinge</w> · <w>oððe</w> <w>on</w> <w>anum</w> <w>geþohte</w> · <w>swa</w> <w>bẏsig</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>ne</w> <w>gẏmð</w> <w>hwa</w>
+				<lb n="259" /><w>hẏre</w> <w>gehende</w> <w>bið</w> · <w>þeah</w> <w>ðe</w> <w>heo</w> <w>on</w> <w>locie</w> · <w>ne</w> <w>þeah</w> <w>heo</w> <w>sume</w>
+				<lb n="260" /><w>stemne</w> <w>gehẏre</w> · <w>heo</w> <w>hit</w> <w>ne</w> <w>understent</w> · <w>ne</w> <w>þeah</w> <w>hi</w> <w>hwa</w> <w>hrep
+				<lb n="261" />pe</w> <w>heo</w> <w>hit</w> <w>ne</w> <w>gefret</w> · <w>Hwilon</w> <w>heo</w> <w>besargað</w> <w>hẏre</w> <w>licho
+				<lb n="262" />man</w> <w>sarnissa</w> · <w>hwilon</w> <w>heo</w> <w>gladað</w> <w>on</w>
+					<w><choice>
+						<abbr>godū</abbr>
+						<expan>godum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>gelimpū</abbr>
+						<expan>gelimpum</expan>
+					</choice></w> ·
+					<w>hwi
+				<lb n="263" />lon</w> <w>heo</w> <w>þæncð</w> <w>þa</w> <w>ðing</w> <w>þe</w> <w>heo</w> <w>ær</w> <w>cuðe</w> · <w>hwilon</w> <w>heo</w> <w>wẏle</w>
+				<lb n="264" /><w>wẏtan</w> <w>þa</w> <w>ðing</w> <w>þe</w> <w>heo</w> <w>ær</w> <w>ne</w> <w>cuðe</w> · <w>Sume</w> <w>þing</w> <w>heo</w> <w>wẏle</w> ·
+				<lb n="265" /><w>sume</w> <w>ðing</w> <w>heo</w> <w>nele</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>ealle</w> <w>lichamlicra</w> <w>þinga</w> <w>hiw</w> <w>heo</w>
+				<lb n="266" /><w>mæg</w> <w>on</w> <w>hẏre</w> <w>sẏlfre</w> <w>gehiwian</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>swa</w> <w>gehiwode</w> <w>on</w> <w>hẏre</w>
+				<lb n="267" /><w>mode</w> <w>gehealden</w> · <w>Ðære</w> <w>sawle</w> <w>wlẏte</w> <w>is</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>wisdom</w>
+				<lb n="268" /><w>lufie</w> · <w>na</w> <w>ðone</w> <w>eorðlican</w> <w>wisdom</w> <w>be</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>þe</w> <w>þus</w> <w>awriten</w> <w>is</w> ·
+				<lb n="269" /><foreign xml:lang="la"><w>Sawientia</w>
+					<w><choice>
+						<abbr>hui</abbr>
+						<expan>huius</expan>
+					</choice></w>
+					<w>mundi</w> · <w>stultitia</w> <w>est</w> <w>apud</w> <w>deum</w></foreign> · <w>Þẏsses</w>
+				<lb n="270" /><w>middan</w> <w>eardes</w> <w>wẏsdom</w> · <w>is</w> <w>stuntnis</w> · <w>ætforan</w> <w>gode</w> · <w>Ac</w>
+				<lb n="271" /><w><choice>
+						<abbr>þonn̄</abbr>
+						<expan>þonne</expan>
+					</choice></w>
+					<w>wisdom</w> <w>heo</w> <w>sceal</w> <w>leornian</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>lufie</w> <w>god</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>hine</w>
+				<lb n="272" /><w>æfre</w> <w>wurðige</w> <w>on</w>
+					<w><choice>
+						<abbr>eallū</abbr>
+						<expan>eallum</expan>
+					</choice></w>
+					<w>hẏre</w>
+					<w><choice>
+						<abbr>weorcū</abbr>
+						<expan>weorcum</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þa</w> <w>þing</w> <w>leorni
+				<lb n="273" />ge</w> <w>þe</w> <w>gode</w> <w>liciað</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>þa</w> <w>þing</w> <w>forlæte</w> <w>þe</w> <w>him</w> <w>laðe</w> <w>sẏndon</w> ·
+				<lb n="274" /><w>Þæs</w> <w>wisdom</w> <w>is</w> <w>awrẏten</w> <w>on</w>
+					<w><choice>
+						<abbr>halgū</abbr>
+						<expan>halgum</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>bocū</abbr>
+						<expan>bocum</expan>
+					</choice></w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>be</w> <w>ðam</w> <w>is</w> <w>þus</w>
+				<lb n="275" /><w>gecwæden</w> · <foreign xml:lang="la"><w>Omnis</w> <w>sapientia</w> <w>a</w>
+					<w><choice>
+						<abbr>dno</abbr>
+						<expan>domino</expan>
+					</choice></w>
+					<w><choice>
+						<abbr>do</abbr>
+						<expan>deo</expan>
+					</choice></w>
+					<w>est</w></foreign> · <w>Ælc</w> <w>wisdom</w>
+				<lb n="276" /><w>is</w> <w>of</w> <w>gode</w> · <w>Is</w> <w>nu</w> <w>forðẏ</w> <w>ælc</w> <w>man</w> <w>eadig</w>
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gesælig</w>· <w>se</w> <w>ðe</w>
+				<lb n="277" /><w>for</w> <w>gode</w> <w>wis</w> <w>bið</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>gif</w> <w>heo</w> <w>his</w> <w>weorc</w> <w>mid</w> <w>wisdome</w> <w>ge
+				<lb n="278" />fadað</w> · <w>Be</w> <w>þæm</w> <w>cwæð</w> <w>se</w> <w>ædiga</w> <w>iob</w> · <w>Þæs</w> <w>mannes</w> <w>wis
+				<lb n="279" />dom</w> <w>is</w> <w>arfæstnẏs</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>soð</w> <w>ingehẏd</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>heo</w> <w>ẏfel</w> <w>forbuge</w> ·
+				<lb n="280" /><w>Witodlice</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>is</w> <w>soþ</w> <w>wẏsdom</w> ·
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>man</w> <w>gewẏlnige</w>
+					<w><choice>
+						<abbr>ꝥ</abbr>
+						<expan>þæt</expan>
+					</choice></w>
+					<w>soðe</w> <w>lif</w>
+				<lb n="281" /><w>on</w>
+					<w><choice>
+						<abbr>þā</abbr>
+						<expan>þam</expan>
+					</choice></w>
+					<w>þe</w> <w>he</w> <w>æfre</w> <w>lẏbban</w> <w>mæg</w> <w>mid</w> <w>gode</w> <w>on</w> <w>wuldre</w>
+				<lb n="282" /><w>gif</w> <w>he</w> <w>hat</w> <w>on</w> <w>þẏssere</w> <w>worulde</w> <w>geearnað</w> · <w>To</w> <w>þam</w>
+				<lb n="283" /><w>us</w> <w>gelæde</w> <w>seo</w> <w>leofa</w> <w>drihten</w> <w>crist</w> · <w>se</w> <w>ðe</w> <w>is</w> <w>soð</w> <w>wẏs
+				<lb n="284" />dom</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>sawla</w> <w>lif</w> · <w>se</w> <w>ðe</w> <w>mid</w> <w>his</w> <w>ecan</w> <w>fæder</w> ·
+					<w><choice>
+						<abbr>⁊</abbr>
+						<expan>and</expan>
+					</choice></w>
+					<w>mid</w>
+				<lb n="285" /><w>þam</w> <w>halgan</w> <w>gaste</w> · <w>a</w> <w>on</w> <w>ecnẏsse</w> <w>leofað</w> · <w>AMEN</w>
+			</ab>
+		</body>
+	</text>
+</TEI>
