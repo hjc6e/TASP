@@ -1,4 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> </TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en"> <!-- bibliographic, technical, cataloguing information, etc. NOT the main text, but essential for a valid TEI document -->
+      <fileDesc> <!-- a general heading -->
+
+         <titleStmt>
+            <title>The Boulogne Sermon: A Digital Edition</title>
+						<title>The Aelfric Scriptorium Project</title> <!-- this is the title of the digital document, not the original text -->
+
+            <principal>Dr. Theodore H. Leinbaugh</principal>
+						<principal>Hunter Corb</principal>
+						<sponsor>Transatlantic Forum for Education and Diplomacy</sponsor>
+						<funder>Transatlantic Forum for Education and Diplomacy</funder>
+						<funder>Joan Gillings</funder>
+
+            <respStmt> <!-- the responsibility statement allows specification of jobs and those who did them -->
+               <resp>Project Director</resp>
+               <name>Dr. Theodore H. Leinbaugh</name>
+							 <resp>Project Manager</resp>
+							 <name>Hunter Corb</name><!-- Other instructors go here -->
+            </respStmt>
+            <respStmt>
+								<resp>Encoding in TEI-conformant markup:</resp>
+									<name>Hunter Corb</name>
+									<name>Sarah Bulger</name>
+               <resp>Manuscription description:</resp>
+               		<name>Dr. Theodore H. Leinbaugh</name>
+							 		<name>Hunter Corb</name>
+							 <resp>Manuscript transcription:</resp>
+							 		<name>Dr. Theodore H. Leinbaugh</resp>
+							 		<name>Matt Diem</name>
+							 		<name>Hunter Corb</name>
+							 	<resp>General overview and critical apparatus:</resp>
+		 							<name>Dr. Theodore H. Leinbaugh</name>
+								<resp>Old English Glossary compiled by:</resp>
+									<name>Theodore H. Leinbaugh</name>
+									<name>Hunter Corb</name>
+									<name>Jacob Beerli</name>
+									<name>Robert Laffoon</name>
+            </respStmt>
+         </titleStmt>
+
+				 <editionStmt>
+					 <edition>Previous Editions</edition>
+					 	<!-- include all previous editions of Aelfric's Live of Saints here -->
+					</editionStmt>
+					<extent>?? [megabytes]</extent>
+
+         <publicationStmt> <!-- this tells you who is publishing the digital version -->
+					 <authority>The Aelfric Scriptorium Project (TASP)</authority>
+            <publisher>Transatlantic Forum for Education and Diplomacy</publisher>
+						<date>2022</date>
+						<availability status="restricted">
+							<license target="http://creativecommons.org/licenses/by-sa/3.0/">Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported license
+							</license>
+							<p>Contact The Aelfric Project team members for more information.</p>
+						</availability>
+         </publicationStmt>
+         <sourceDesc> <!-- this tells you about the origial that is being encoded here -->
+
+            <msDesc> <!-- this is vital for MSS markup; it contains the information usually found in catalogue entries and edition front matter -->
+
+
+               <msIdentifier> <!-- This is  the information required to identify the manuscript being described -->
+                  <settlement></settlement>
+                  <repository></repository>
+                  <idno></idno>
+               </msIdentifier>
+
+
+               <head> <!-- basic statement about the MSS goes here --> </head>
+
+               <msContents>
+                  <summary><!-- what is in the MS in terms of texts and sections -->
+
+                  </summary>
+                  <textLang><!-- languages --></textLang>
+               </msContents>
+
+               <physDesc> <!-- elements of the physical description of the MS -->
+                  <objectDesc>
+                     <supportDesc>
+                        <support><!-- description of support (Note this may contain many elements) -->
+                           <p></p>
+
+                        </support>
+                        <extent>
+                           <!-- description of size -->
+                        </extent>
+                        <condition>
+                           <p><!-- description of damage, etc -->
+                           </p>
+                        </condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><!-- how text is laid out on the page, including information about any ruling, pricking -->
+
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+
+                  <handDesc>
+                     <ab> <!--a description of the writing in the manuscript --></ab>
+                  </handDesc>
+
+                  <decoDesc>
+                     <p>
+                        <!-- description of the decoration in the MS -->
+                     </p>
+                  </decoDesc>
+
+               </physDesc>
+
+
+
+               <history> <!-- this tells you the origin and provenance of the MS -->
+                  <summary></summary>
+                  <origin>
+                  </origin>
+                  <provenance>
+                  </provenance>
+               </history>
+
+               <additional>
+                  <listBibl>
+                    <bibl></bibl>
+                 </listBibl>
+
+               </additional>
+
+            </msDesc>
+
+
+
+         </sourceDesc>
+      </fileDesc>
+
+    <encodingDesc> <!-- This contains information about the editorial and encoding practices -->
+        <projectDesc> <p><!-- goals of the project --></p>  </projectDesc>
+       <editorialDecl>
+				 <p>In an effort to preserve all spelling variants in a world without standardized spelling, we have rendered all words
+				 as they appear in the MS.</p>
+				 <!-- include all other editorial declarations and decisions here -->
+			 </editorialDecl>
+
+
+    </encodingDesc>
+		<revisionDesc>
+			<list>
+				<item>
+					<date when=""></date>
+				</item>
+			</list>
+		</revisionDesc>
+</teiHeader>
+
+<text>
+   <body>
+      <div type="sermon">
+     	</div>
+	</body>
+</text>
+</TEI>
